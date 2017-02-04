@@ -1,0 +1,8 @@
+DECLARE
+   num1 INTEGER;
+   num2 REAL;
+   num3 DOUBLE PRECISION;
+BEGIN
+   null;
+END;
+/
