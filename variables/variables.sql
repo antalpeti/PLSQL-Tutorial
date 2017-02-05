@@ -1,11 +1,12 @@
 DECLARE
-   SUBTYPE name IS char(20);
-   SUBTYPE message IS varchar2(100);
-   salutation name;
-   greetings message;
+   a integer := 10;
+   b integer := 20;
+   c integer;
+   f real;
 BEGIN
-   salutation := 'Reader ';
-   greetings := 'Welcome to the World of PL/SQL';
-   dbms_output.put_line('Hello ' || salutation || greetings);
+   c := a + b;
+   dbms_output.put_line('Value of c: ' || c);
+   f := 70.0/3.0;
+   dbms_output.put_line('Value of f: ' || f);
 END;
 /
