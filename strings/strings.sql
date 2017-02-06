@@ -56,6 +56,6 @@ END;
 BEGIN
    dbms_output.put_line(NVL(null,'the parameter is null'));
    dbms_output.put_line(NVL('value','the parameter is null'));
-   dbms_output.put_line(REPLACE('---value---', '-', '+'););
+   dbms_output.put_line(REPLACE('---value---', '-', '+'));
 END;
 /
