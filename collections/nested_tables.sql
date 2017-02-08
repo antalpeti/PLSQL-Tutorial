@@ -32,3 +32,26 @@ BEGIN
    END LOOP;
 END;
 /
+
+DECLARE
+   CURSOR c_customers is 
+      SELECT  * FROM customers;
+
+   TYPE c_list IS TABLE of customers%rowtype;
+   customer_list c_list := c_list();
+   counter integer :=0;
+BEGIN
+   FOR n IN c_customers LOOP
+      counter := counter +1;
+      customer_list.extend;
+      customer_list(counter)  := n;
+      dbms_output.put_line('Customer('||counter||'):'||customer_list(counter).name||', '||customer_list(counter).age||
+      ', '||customer_list(counter).salary||', '||customer_list(counter).address);
+   END LOOP;
+   dbms_output.put_line('COUNT:'||customer_list.count);
+   dbms_output.put_line('FIRST:'||customer_list.first);
+   dbms_output.put_line('LAST:'||customer_list.last);
+   dbms_output.put_line('PRIOR(3):'||customer_list.prior(3));
+   dbms_output.put_line('NEXT(3):'||customer_list.next(3));
+END;
+/
