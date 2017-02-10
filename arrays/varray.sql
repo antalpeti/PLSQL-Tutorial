@@ -1,6 +1,6 @@
 DECLARE
-   type namesarray IS VARRAY(5) OF VARCHAR2(10);
-   type grades IS VARRAY(5) OF INTEGER;
+   TYPE namesarray IS VARRAY(5) OF VARCHAR2(10);
+   TYPE grades IS VARRAY(5) OF INTEGER;
    names namesarray;
    marks grades;
    total INTEGER;

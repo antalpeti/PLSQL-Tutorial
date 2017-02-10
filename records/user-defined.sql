@@ -1,5 +1,5 @@
 DECLARE
-   type books IS RECORD
+   TYPE books IS RECORD
       (title VARCHAR(50),
        author VARCHAR(50),
        subject VARCHAR(100),
