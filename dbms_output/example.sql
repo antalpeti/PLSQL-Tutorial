@@ -1,6 +1,6 @@
 DECLARE
    lines dbms_output.chararr;
-   num_lines number;
+   num_lines NUMBER;
 BEGIN
    -- enable the buffer with default size 20000
    dbms_output.enable;

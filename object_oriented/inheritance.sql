@@ -1,14 +1,14 @@
 CREATE OR REPLACE TYPE rectangle AS OBJECT
-(length number,
- width number,
- member function enlarge( inc number) return rectangle,
- NOT FINAL member procedure display) NOT FINAL
+(length NUMBER,
+ width NUMBER,
+ member function enlarge( inc NUMBER) RETURN rectangle,
+ NOT FINAL member PROCEDURE display) NOT FINAL
 /
 
 CREATE OR REPLACE TYPE BODY rectangle AS
-   MEMBER FUNCTION enlarge(inc number) return rectangle IS
+   MEMBER FUNCTION enlarge(inc NUMBER) RETURN rectangle IS
    BEGIN
-      return rectangle(self.length + inc, self.width + inc);
+      RETURN rectangle(self.length + inc, self.width + inc);
    END enlarge;
 
    MEMBER PROCEDURE display IS
@@ -21,8 +21,8 @@ END;
 
 CREATE OR REPLACE TYPE tabletop UNDER rectangle
 (  
-   material varchar2(20),
-   OVERRIDING member procedure display
+   material VARCHAR2(20),
+   OVERRIDING member PROCEDURE display
 )
 /
 

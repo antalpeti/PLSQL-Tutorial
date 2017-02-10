@@ -1,5 +1,5 @@
 DECLARE
-PROCEDURE compare (value  varchar2,  pattern varchar2 ) is
+PROCEDURE compare (value  VARCHAR2,  pattern VARCHAR2 ) IS
 BEGIN
    IF value LIKE pattern THEN
       dbms_output.put_line ('True');
@@ -15,9 +15,9 @@ END;
 /
 
 DECLARE
-   x number(2) := 10;
+   x NUMBER(2) := 10;
 BEGIN
-   IF (x between 5 and 20) THEN
+   IF (x BETWEEN 5 AND 20) THEN
       dbms_output.put_line('True');
    ELSE
       dbms_output.put_line('False');
@@ -38,21 +38,21 @@ END;
 /
 
 DECLARE
-   letter varchar2(1) := 'm';
+   letter VARCHAR2(1) := 'm';
 BEGIN
-   IF (letter in ('a', 'b', 'c')) THEN
+   IF (letter IN ('a', 'b', 'c')) THEN
       dbms_output.put_line('True');
    ELSE
       dbms_output.put_line('False');
    END IF;
  
-   IF (letter in ('m', 'n', 'o')) THEN
+   IF (letter IN ('m', 'n', 'o')) THEN
        dbms_output.put_line('True');
    ELSE
       dbms_output.put_line('False');
    END IF;
    
-   IF (letter is null) THEN
+   IF (letter IS NULL) THEN
     dbms_output.put_line('True');
    ELSE
       dbms_output.put_line('False');

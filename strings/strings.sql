@@ -1,8 +1,8 @@
 DECLARE
-   name varchar2(20);
-   company varchar2(30);
-   introduction clob;
-   choice char(1);
+   name VARCHAR2(20);
+   company VARCHAR2(30);
+   introduction CLOB;
+   choice CHAR(1);
 BEGIN
    name := 'John Smith';
    company := 'Infotech';
@@ -17,7 +17,7 @@ END;
 /
 
 DECLARE
-   greetings varchar2(11) := 'hello world';
+   greetings VARCHAR2(11) := 'hello world';
 BEGIN
    dbms_output.put_line(UPPER(greetings));
    
@@ -45,11 +45,11 @@ END;
 /
 
 DECLARE
-   greetings varchar2(30) := '......Hello World.....';
+   greetings VARCHAR2(30) := '......Hello World.....';
 BEGIN
    dbms_output.put_line(RTRIM(greetings,'.'));
    dbms_output.put_line(LTRIM(greetings, '.'));
-   dbms_output.put_line(TRIM( '.' from greetings));
+   dbms_output.put_line(TRIM( '.' FROM greetings));
 END;
 /
 

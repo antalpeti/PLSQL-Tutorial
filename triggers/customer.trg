@@ -3,7 +3,7 @@ BEFORE DELETE OR INSERT OR UPDATE ON customers
 FOR EACH ROW
 WHEN (NEW.ID > 0)
 DECLARE
-   sal_diff number;
+   sal_diff NUMBER;
 BEGIN
    sal_diff := :NEW.salary  - :OLD.salary;
    dbms_output.put_line('Old salary: ' || :OLD.salary);

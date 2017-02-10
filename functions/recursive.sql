@@ -1,11 +1,11 @@
 DECLARE
-   num number;
-   factorial number;
+   num NUMBER;
+   factorial NUMBER;
 
-FUNCTION fact(x number)
-RETURN number 
+FUNCTION fact(x NUMBER)
+RETURN NUMBER 
 IS
-   f number;
+   f NUMBER;
 BEGIN
    IF x=0 THEN
       f := 1;

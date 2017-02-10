@@ -1,6 +1,6 @@
 DECLARE
-   a number(3) := 100;
-   b number(3) := 200;
+   a NUMBER(3) := 100;
+   b NUMBER(3) := 200;
 BEGIN
    -- check the boolean condition 
    IF( a = 100 ) THEN

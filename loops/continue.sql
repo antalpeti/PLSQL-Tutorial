@@ -1,5 +1,5 @@
 DECLARE
-   a number(2) := 9;
+   a NUMBER(2) := 9;
 BEGIN
    -- while loop execution 
    WHILE a < 20 LOOP

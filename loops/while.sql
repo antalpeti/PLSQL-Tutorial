@@ -1,5 +1,5 @@
 DECLARE
-   a number(2) := 10;
+   a NUMBER(2) := 10;
 BEGIN
    WHILE a < 20 LOOP
       dbms_output.put_line('value of a: ' || a);

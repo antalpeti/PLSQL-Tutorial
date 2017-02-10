@@ -1,16 +1,16 @@
 DECLARE
-   a number;
-   b number;
-   c number;
-FUNCTION findMax(x IN number, y IN number) 
-RETURN number
+   a NUMBER;
+   b NUMBER;
+   c NUMBER;
+FUNCTION findMax(x IN NUMBER, y IN NUMBER) 
+RETURN NUMBER
 IS
-    z number;
+    z NUMBER;
 BEGIN
    IF x > y THEN
       z:= x;
    ELSE
-      Z:= y;
+      z:= y;
    END IF;
 
    RETURN z;

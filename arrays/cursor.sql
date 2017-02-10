@@ -1,9 +1,9 @@
 DECLARE
-   CURSOR c_customers is
+   CURSOR c_customers IS
    SELECT  name FROM customers;
-   type c_list is varray (6) of customers.name%type;
+   TYPE c_list IS varray (6) OF customers.name%TYPE;
    name_list c_list := c_list();
-   counter integer :=0;
+   counter INTEGER :=0;
 BEGIN
    FOR n IN c_customers LOOP
       counter := counter + 1;

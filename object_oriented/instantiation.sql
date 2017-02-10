@@ -1,18 +1,18 @@
 CREATE OR REPLACE TYPE address AS OBJECT
-(house_no varchar2(10),
- street varchar2(30),
- city varchar2(20),
- state varchar2(10),
- pincode varchar2(10)
+(house_no VARCHAR2(10),
+ street VARCHAR2(30),
+ city VARCHAR2(20),
+ state VARCHAR2(10),
+ pincode VARCHAR2(10)
 );
 /
 
 CREATE OR REPLACE TYPE customer AS OBJECT
 (code number(5),
- name varchar2(30),
- contact_no varchar2(12),
+ name VARCHAR2(30),
+ contact_no VARCHAR2(12),
  addr address,
- member procedure display
+ MEMBER PROCEDURE display
 );
 /
 

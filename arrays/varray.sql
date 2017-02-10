@@ -3,13 +3,13 @@ DECLARE
    type grades IS VARRAY(5) OF INTEGER;
    names namesarray;
    marks grades;
-   total integer;
+   total INTEGER;
 BEGIN
    names := namesarray('Kavita', 'Pritam', 'Ayan', 'Rishav', 'Aziz');
    marks:= grades(98, 97, 78, 87, 92);
-   total := names.count;
+   total := names.COUNT;
    dbms_output.put_line('Total '|| total || ' Students');
-   FOR i in 1 .. total LOOP
+   FOR i IN 1 .. total LOOP
       dbms_output.put_line('Student: ' || names(i) || '   Marks: ' || marks(i));
    END LOOP;
 END;

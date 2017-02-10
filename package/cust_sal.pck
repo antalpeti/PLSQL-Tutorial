@@ -1,5 +1,5 @@
 CREATE PACKAGE cust_sal AS
-   PROCEDURE find_sal(c_id customers.id%type);
+   PROCEDURE find_sal(c_id customers.id%TYPE);
 END cust_sal;
 /
 

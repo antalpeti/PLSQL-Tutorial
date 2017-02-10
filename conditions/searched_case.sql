@@ -1,13 +1,13 @@
 DECLARE
-   grade char(1) := 'B';
+   grade CHAR(1) := 'B';
 BEGIN
-   case 
-      when grade = 'A' then dbms_output.put_line('Excellent');
-      when grade = 'B' then dbms_output.put_line('Very good');
-      when grade = 'C' then dbms_output.put_line('Well done');
-      when grade = 'D' then dbms_output.put_line('You passed');
-      when grade = 'F' then dbms_output.put_line('Better try again');
-      else dbms_output.put_line('No such grade');
-   end case;
+   CASE 
+      WHEN grade = 'A' THEN dbms_output.put_line('Excellent');
+      WHEN grade = 'B' THEN dbms_output.put_line('Very good');
+      WHEN grade = 'C' THEN dbms_output.put_line('Well done');
+      WHEN grade = 'D' THEN dbms_output.put_line('You passed');
+      WHEN grade = 'F' THEN dbms_output.put_line('Better try again');
+      ELSE dbms_output.put_line('No such grade');
+   END CASE;
 END;
 /

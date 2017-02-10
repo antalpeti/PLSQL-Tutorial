@@ -1,5 +1,5 @@
 DECLARE
-   customer_rec customers%rowtype;
+   customer_rec customers%ROWTYPE;
 BEGIN
    SELECT * INTO customer_rec
    FROM customers

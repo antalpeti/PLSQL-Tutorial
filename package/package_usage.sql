@@ -1,12 +1,12 @@
 DECLARE
-   code customers.id%type := &cc_id;
+   code customers.id%TYPE := &cc_id;
 BEGIN
    cust_sal.find_sal(code);
 END;
 /
 
 DECLARE
-   code customers.id%type:= 8;
+   code customers.id%TYPE:= 8;
 BEGIN
       c_package.addcustomer(7, 'Rajnish', 25, 'Chennai', 3500);
       c_package.addcustomer(8, 'Subham', 32, 'Delhi', 7500);

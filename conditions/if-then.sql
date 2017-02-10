@@ -1,5 +1,5 @@
 DECLARE
-   a number(2) := 10;
+   a NUMBER(2) := 10;
 BEGIN
    a:= 10;
   -- check the boolean condition using if statement 
@@ -12,8 +12,8 @@ END;
 /
 
 DECLARE
-   c_id customers.id%type := 1;
-   c_sal  customers.salary%type;
+   c_id customers.id%TYPE := 1;
+   c_sal  customers.salary%TYPE;
 BEGIN
    SELECT  salary 
    INTO  c_sal

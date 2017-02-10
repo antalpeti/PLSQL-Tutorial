@@ -1,15 +1,15 @@
 DECLARE 
-   total_rows number(2);
+   total_rows NUMBER(2);
 BEGIN
    UPDATE customers
    SET salary = salary + 500;
-   IF sql%notfound THEN
+   IF SQL%NOTFOUND THEN
       dbms_output.put_line('no customers selected');
-   ELSIF sql%found THEN
-      total_rows := sql%rowcount;
+   ELSIF SQL%FOUND THEN
+      total_rows := SQL%ROWCOUNT;
       dbms_output.put_line( total_rows || ' customers selected ');
    END IF; 
-   IF sql%isopen THEN
+   IF SQL%ISOPEN THEN
       dbms_output.put_line( 'Implicit cursor is open. ');
    ELSE
       dbms_output.put_line( 'Implicit cursor is closed. ');

@@ -1,5 +1,5 @@
 DECLARE
-   a number(2) := 9;
+   a NUMBER(2) := 9;
 BEGIN
    <<loopstart>>
    -- while loop execution 

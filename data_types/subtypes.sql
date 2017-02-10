@@ -1,6 +1,6 @@
 DECLARE
-   SUBTYPE name IS char(20);
-   SUBTYPE message IS varchar2(100);
+   SUBTYPE name IS CHAR(20);
+   SUBTYPE message IS VARCHAR2(100);
    salutation name;
    greetings message;
 BEGIN

@@ -1,6 +1,6 @@
 DECLARE
-   a boolean := true;
-   b boolean := false;
+   a boolean := TRUE;
+   b boolean := FALSE;
 BEGIN
    IF (a AND b) THEN
       dbms_output.put_line('Line 1 - Condition is true');

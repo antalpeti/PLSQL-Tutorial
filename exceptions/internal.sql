@@ -1,7 +1,7 @@
 DECLARE
-   c_id customers.id%type := 8;
-   c_name  customers.name%type;
-   c_addr customers.address%type;
+   c_id customers.id%TYPE := 8;
+   c_name  customers.name%TYPE;
+   c_addr customers.address%TYPE;
 BEGIN
    SELECT  name, address INTO  c_name, c_addr
    FROM customers
@@ -12,7 +12,7 @@ BEGIN
 EXCEPTION
    WHEN no_data_found THEN
       dbms_output.put_line('No such customer!');
-   WHEN others THEN
+   WHEN OTHERS THEN
       dbms_output.put_line('Error!');
 END;
 /

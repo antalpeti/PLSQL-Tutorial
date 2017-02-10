@@ -1,14 +1,14 @@
 DECLARE
-   a number (2) := 21;
-   b number (2) := 10;
+   a NUMBER (2) := 21;
+   b NUMBER (2) := 10;
 BEGIN
-   IF (a = b) then
+   IF (a = b) THEN
       dbms_output.put_line('Line 1 - a is equal to b');
    ELSE
       dbms_output.put_line('Line 1 - a is not equal to b');
    END IF;
 
-   IF (a < b) then
+   IF (a < b) THEN
       dbms_output.put_line('Line 2 - a is less than b');
    ELSE
       dbms_output.put_line('Line 2 - a is not less than b');

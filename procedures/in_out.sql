@@ -1,9 +1,9 @@
 DECLARE
-   a number;
-   b number;
-   c number;
+   a NUMBER;
+   b NUMBER;
+   c NUMBER;
 
-PROCEDURE findMin(x IN number, y IN number, z OUT number) IS
+PROCEDURE findMin(x IN NUMBER, y IN NUMBER, z OUT NUMBER) IS
 BEGIN
    IF x < y THEN
       z:= x;
@@ -23,8 +23,8 @@ END;
 /
 
 DECLARE
-   a number;
-PROCEDURE squareNum(x IN OUT number) IS
+   a NUMBER;
+PROCEDURE squareNum(x IN OUT NUMBER) IS
 BEGIN
   x := x * x;
 END; 

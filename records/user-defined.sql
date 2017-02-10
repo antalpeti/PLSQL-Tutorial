@@ -1,9 +1,9 @@
 DECLARE
-   type books is record
-      (title varchar(50),
-       author varchar(50),
-       subject varchar(100),
-       book_id number);
+   type books IS RECORD
+      (title VARCHAR(50),
+       author VARCHAR(50),
+       subject VARCHAR(100),
+       book_id NUMBER);
    book1 books;
    book2 books;
 BEGIN

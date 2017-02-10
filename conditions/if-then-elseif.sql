@@ -1,5 +1,5 @@
 DECLARE
-   a number(3) := 100;
+   a NUMBER(3) := 100;
 BEGIN
    IF ( a = 10 ) THEN
       dbms_output.put_line('Value of a is 10' );

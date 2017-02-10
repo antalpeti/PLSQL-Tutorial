@@ -1,7 +1,7 @@
 DECLARE
-   c_id customers.id%type := &cc_id;
-   c_name  customers.name%type;
-   c_addr customers.address%type;
+   c_id customers.id%TYPE := &cc_id;
+   c_name  customers.name%TYPE;
+   c_addr customers.address%TYPE;
 
    -- user defined exception
    ex_invalid_id  EXCEPTION;

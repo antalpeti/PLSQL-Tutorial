@@ -1,5 +1,5 @@
 DECLARE
-   a number(3) := 100;
+   a NUMBER(3) := 100;
 BEGIN
    -- check the boolean condition using if statement 
    IF( a < 20 ) THEN
